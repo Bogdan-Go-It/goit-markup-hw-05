@@ -155,6 +155,7 @@ button {
 }
 /* ----------------------------------HADER LINC---------------------------------------- */
 .header-linc {
+  position: relative;
   padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
@@ -166,6 +167,23 @@ button {
 .header-linc:focus {
   color: var(--color-ocean);
 }
+.header-linc::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+.header-linc.current::after,
+.header-linc:hover::after,
+.header-linc:focus::after {
+  background-color: var(--color-ocean);
+}
+
 .header-contacts {
   font-style: normal;
 }
