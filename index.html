@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Animate on scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -65,7 +67,9 @@
         <div class="container-card container">
           <h1 class="card-head">Effective Solutions for Your Business</h1>
 
-          <button class="card-button" type="button">Order Service</button>
+          <button class="card-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- DESCRIPTION-------------------------------------------------- -->
@@ -589,14 +593,17 @@
       </div>
     </footer>
     <!-- MODAL WINDOW-------------------------------------------- -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button">
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="20" height="20">
             <use c></use>
           </svg>
         </button>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

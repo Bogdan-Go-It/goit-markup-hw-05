@@ -710,9 +710,16 @@ button {
   bottom: 0;
 
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 400ms, visibility 400ms;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
+
   top: calc(50% - 288px);
   left: calc(50% - 204px);
 
