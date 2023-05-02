@@ -772,4 +772,5 @@ button {
 .modal :hover .modal-icon,
 .modal :focus .modal-icon {
   fill: var(--color-white);
+  border: 0;
 }
