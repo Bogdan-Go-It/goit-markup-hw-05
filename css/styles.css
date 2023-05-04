@@ -25,6 +25,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 /* Допомогає приховати елемент. Але,цей елемент остається на макеті ( на відміну з display: none ), у виглять 1-го пикселя. */
 .visually-hidden {
@@ -85,9 +87,6 @@ button {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
 }
 
 /* HEADER ==============================================================================*/
